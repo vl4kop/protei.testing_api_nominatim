@@ -13,12 +13,8 @@ python -m venv venv
 
 venv\Scripts\activate
 
-cd protei.testing_api_nominatim
+pip install -r protei_testing_api_nominatim\requirements.txt
 
-pip install -r protei.testing_api_nominatim\requirements.txt
+pytest -s -v protei_testing_api_nominatim\tests\test.py
 
-cd tests
-
-pytest -s -v protei.testing_api_nominatim\tests\test.py
-
-python -m pytest -s -v protei.testing_api_nominatim\tests\test.py
+python -m pytest -s -v protei_testing_api_nominatim\tests\test.py

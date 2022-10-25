@@ -13,7 +13,8 @@ class Logger(object):
     __logger = logging.getLogger("Logger")
     logging.basicConfig(level=logging.INFO, filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s',
-                        datefmt='%d-%m-%y %H:%M:%S', filename="tests/logs/logs.txt", force=True)
+                        datefmt='%d-%m-%y %H:%M:%S',
+                        filename="protei_testing_api_nominatim/tests/logs/logs.txt", force=True)
 
     @staticmethod
     def set_level(level):

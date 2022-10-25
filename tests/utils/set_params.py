@@ -12,5 +12,5 @@ class Params:
         return data_dict
 
     def get_params_for_request_reverse(self, data: dict):
-        data_dict = data.update(self.params_reverse)
-        return data_dict
+        data.update(self.params_reverse)
+        return data

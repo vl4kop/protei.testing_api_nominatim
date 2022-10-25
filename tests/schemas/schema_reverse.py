@@ -1,27 +1,9 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import List, Optional
+from .schema_address import Address
 
 
-class Address(BaseModel):
-    building: Optional[str]
-    highway: Optional[str]
-    house_number: Optional[str]
-    road: Optional[str]
-    hamlet: Optional[str]
-    town: Optional[str]
-    village: Optional[str]
-    city_district: Optional[str]
-    city: Optional[str]
-    ISO31662lvl15: Optional[str] = Field(alias='ISO3166-2-lvl15')
-    ISO31662lvl4: Optional[str] = Field(alias='ISO3166-2-lvl4')
-    state: Optional[str]
-    region: Optional[str]
-    postcode: Optional[str]
-    country: Optional[str]
-    country_code: Optional[str]
-
-
-class ResponseReverse(BaseModel):
+class Schema(BaseModel):
     place_id: int
     licence: str
     osm_type: str
@@ -31,3 +13,7 @@ class ResponseReverse(BaseModel):
     lon: float
     display_name: str
     address: Address
+
+
+class ResponseSchemaReverse(BaseModel):
+    response_model: List[Schema]
