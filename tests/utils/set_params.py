@@ -1,4 +1,4 @@
-from ...configurations.config import SearchParams, ReverseParams
+from protei_testing_api_nominatim.configurations.config import SearchParams, ReverseParams
 
 
 class Params:
