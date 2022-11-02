@@ -1,4 +1,4 @@
-from .logger import Logger
+from protei_testing_api_nominatim.framework.logger import Logger
 
 import requests
 from requests import Response

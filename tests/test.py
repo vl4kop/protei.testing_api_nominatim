@@ -1,14 +1,14 @@
 # coding=utf-8
 
 import pytest
-from ..framework.constants import StatusCode
-from ..configurations.data_for_tests import DataSearch, DataReverse
-from .api.search import Search
-from .api.reverse import Reverse
-from .utils.validations import Validations
+from protei_testing_api_nominatim.framework.constants import StatusCode
+from protei_testing_api_nominatim.configurations.data_for_tests import DataSearch, DataReverse
+from protei_testing_api_nominatim.tests.api.search import Search
+from protei_testing_api_nominatim.tests.api.reverse import Reverse
+from protei_testing_api_nominatim.tests.utils.validations import Validations
 
-from .schemas.schema_search import ResponseSchemaSearch
-from .schemas.schema_reverse import ResponseSchemaReverse
+from protei_testing_api_nominatim.tests.schemas.schema_search import ResponseSchemaSearch
+from protei_testing_api_nominatim.tests.schemas.schema_reverse import ResponseSchemaReverse
 
 
 class TestNominatimAPI:

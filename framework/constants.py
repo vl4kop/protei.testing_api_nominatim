@@ -1,4 +1,4 @@
-from ..configurations.config import Config
+from protei_testing_api_nominatim.configurations.config import Config
 
 
 class StatusCode:

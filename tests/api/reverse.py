@@ -1,5 +1,5 @@
-from ...framework.base_request import BaseRequest
-from ..utils.set_params import Params
+from protei_testing_api_nominatim.framework.base_request import BaseRequest
+from protei_testing_api_nominatim.tests.utils.set_params import Params
 
 
 class Reverse(BaseRequest):

@@ -1,4 +1,4 @@
-from ..framework.logger import Logger
+from protei_testing_api_nominatim.framework.logger import Logger
 
 import pytest
 from _pytest.runner import CallInfo

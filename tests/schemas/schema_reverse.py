@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import List, Optional
-from .schema_address import Address
+from protei_testing_api_nominatim.tests.schemas.schema_address import Address
 
 
 class Schema(BaseModel):

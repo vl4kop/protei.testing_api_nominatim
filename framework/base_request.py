@@ -1,6 +1,6 @@
-from .models import ResponseModel
-from .constants import Configuration
-from .requests import ShellRequestAPI
+from protei_testing_api_nominatim.framework.models import ResponseModel
+from protei_testing_api_nominatim.framework.constants import Configuration
+from protei_testing_api_nominatim.framework.requests import ShellRequestAPI
 
 
 class BaseRequest:
